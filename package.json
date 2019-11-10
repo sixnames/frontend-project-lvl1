@@ -1,0 +1,22 @@
+{
+  "name": "frontend-project-lvl1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "welcome": "src/bin/brain-games.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sixnames/frontend-project-lvl1.git"
+  },
+  "author": "Kirshman Slava",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sixnames/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/sixnames/frontend-project-lvl1#readme"
+}
