@@ -3,7 +3,7 @@ import userName from '.';
 
 const round = () => {
   const number = Math.floor(Math.random() * 10);
-  const isEven = number % 2 === 0;
+  const isEven = number % 2 === 0 && number !== 0;
   const answer = readLineSync.question(`Question: ${number} `);
   const correctAnswer = isEven ? 'yes' : 'no';
   return {
