@@ -6,4 +6,15 @@ Hexlet frontend project level 1
 
 brain-even usage example
 ------------------
+`$ npm install frontend-project-lvl1`
+
+or
+
+`$ yarn add frontend-project-lvl1`
+
+To start the game:
+
+`$ brain-even`
+
+Example:
 [![asciicast](https://asciinema.org/a/280965.svg)](https://asciinema.org/a/280965)
