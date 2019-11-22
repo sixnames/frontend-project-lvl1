@@ -1,5 +1,5 @@
 import readLineSync from 'readline-sync';
-import createGame from './createGame';
+import createGame from '../utils/createGame';
 import getRandomNumber from '../utils/getRandomNumber';
 import {
   NUMBERS_OPERATION_ADDITION,
