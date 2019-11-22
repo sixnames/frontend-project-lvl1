@@ -30,4 +30,4 @@ To start the game:
 `$ brain-calc`
 
 Example:
-[![asciicast](https://asciinema.org/a/280965.svg)](https://asciinema.org/a/280965)
+[![asciicast](https://asciinema.org/a/283021.svg)](https://asciinema.org/a/283021)
