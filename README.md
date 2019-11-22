@@ -31,3 +31,13 @@ To start the game:
 
 Example:
 [![asciicast](https://asciinema.org/a/283021.svg)](https://asciinema.org/a/283021)
+
+brain-gcd usage example
+------------------
+
+To start the game:
+
+`$ brain-gcd`
+
+Example:
+[![asciicast](https://asciinema.org/a/283025.svg)](https://asciinema.org/a/283025)
