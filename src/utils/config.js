@@ -1,0 +1,5 @@
+export const STEPS_COUNT = 3;
+export const NUMBERS_OPERATION_ADDITION = '+';
+export const NUMBERS_OPERATION_SUBTRACTION = '-';
+export const NUMBERS_OPERATION_MULTIPLICATION = '*';
+export const NUMBERS_OPERATION_DIVISION = '/';

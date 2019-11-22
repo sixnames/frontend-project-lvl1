@@ -1,5 +1,5 @@
 import userName from '../index';
-import { STEPS_COUNT } from '../config';
+import { STEPS_COUNT } from '../utils/config';
 
 export default (greeting, round) => {
   let isSuccess = false;
