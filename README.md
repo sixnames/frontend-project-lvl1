@@ -20,7 +20,7 @@ To start the game:
 `$ brain-even`
 
 Example:
-[![asciicast](https://asciinema.org/a/280965.svg)](https://asciinema.org/a/280965)
+[![asciicast](https://asciinema.org/a/283108.svg)](https://asciinema.org/a/283108)
 
 brain-calc usage example
 ------------------
@@ -41,3 +41,13 @@ To start the game:
 
 Example:
 [![asciicast](https://asciinema.org/a/283025.svg)](https://asciinema.org/a/283025)
+
+brain-progression usage example
+------------------
+
+To start the game:
+
+`$ brain-progression`
+
+Example:
+[![asciicast](https://asciinema.org/a/283107.svg)](https://asciinema.org/a/283107)
