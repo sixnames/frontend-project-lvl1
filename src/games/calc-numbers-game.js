@@ -2,19 +2,19 @@ import readLineSync from 'readline-sync';
 import createGame from '../utils/createGame';
 import getRandomNumber from '../utils/getRandomNumber';
 import {
-  NUMBERS_OPERATION_ADDITION,
-  NUMBERS_OPERATION_DIVISION,
-  NUMBERS_OPERATION_MULTIPLICATION,
-  NUMBERS_OPERATION_SUBTRACTION,
+  MATH_OPERATION_ADDITION,
+  MATH_OPERATION_DIVISION,
+  MATH_OPERATION_MULTIPLICATION,
+  MATH_OPERATION_SUBTRACTION,
 } from '../utils/config';
 import getCalcResult from '../utils/getCalcResult';
 
 const round = () => {
   const operations = [
-    NUMBERS_OPERATION_ADDITION,
-    NUMBERS_OPERATION_SUBTRACTION,
-    NUMBERS_OPERATION_MULTIPLICATION,
-    NUMBERS_OPERATION_DIVISION,
+    MATH_OPERATION_ADDITION,
+    MATH_OPERATION_SUBTRACTION,
+    MATH_OPERATION_MULTIPLICATION,
+    MATH_OPERATION_DIVISION,
   ];
   const leftNumber = getRandomNumber();
   const rightNumber = getRandomNumber();

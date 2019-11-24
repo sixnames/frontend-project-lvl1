@@ -1,21 +1,21 @@
 import {
-  NUMBERS_OPERATION_ADDITION,
-  NUMBERS_OPERATION_DIVISION,
-  NUMBERS_OPERATION_MULTIPLICATION,
-  NUMBERS_OPERATION_SUBTRACTION,
+  MATH_OPERATION_ADDITION,
+  MATH_OPERATION_DIVISION,
+  MATH_OPERATION_MULTIPLICATION,
+  MATH_OPERATION_SUBTRACTION,
 } from './config';
 
 function getCalcResult({ operation = '', leftNumber = 1, rightNumber = 1 }) {
-  if (operation === NUMBERS_OPERATION_ADDITION) {
+  if (operation === MATH_OPERATION_ADDITION) {
     return leftNumber + rightNumber;
   }
-  if (operation === NUMBERS_OPERATION_SUBTRACTION) {
+  if (operation === MATH_OPERATION_SUBTRACTION) {
     return leftNumber - rightNumber;
   }
-  if (operation === NUMBERS_OPERATION_MULTIPLICATION) {
+  if (operation === MATH_OPERATION_MULTIPLICATION) {
     return leftNumber * rightNumber;
   }
-  if (operation === NUMBERS_OPERATION_DIVISION) {
+  if (operation === MATH_OPERATION_DIVISION) {
     return leftNumber / rightNumber;
   }
   return 0;
