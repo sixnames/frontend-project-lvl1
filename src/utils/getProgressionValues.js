@@ -16,11 +16,11 @@ function getProgressionValues() {
       correctAnswer = nextNumber;
     }
     
+    if (i === unknownNumberIndex && i === 0) {
+      correctAnswer = firstNumber;
+    }
+    
     if (i === 0) {
-      if (i === unknownNumberIndex) {
-        correctAnswer = firstNumber;
-      }
-      
       allNumbers.push(firstNumber);
     } else {
       allNumbers.push(nextNumber);
