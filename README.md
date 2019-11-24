@@ -51,3 +51,13 @@ To start the game:
 
 Example:
 [![asciicast](https://asciinema.org/a/283107.svg)](https://asciinema.org/a/283107)
+
+brain-prime usage example
+------------------
+
+To start the game:
+
+`$ brain-prime`
+
+Example:
+[![asciicast](https://asciinema.org/a/283260.svg)](https://asciinema.org/a/283260)
