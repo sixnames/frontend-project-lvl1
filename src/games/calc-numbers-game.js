@@ -7,6 +7,7 @@ import {
   NUMBERS_OPERATION_MULTIPLICATION,
   NUMBERS_OPERATION_SUBTRACTION,
 } from '../utils/config';
+import getCalcResult from '../utils/getCalcResult';
 
 const round = () => {
   const operations = [
@@ -21,23 +22,11 @@ const round = () => {
   const currentOperation = operations[operationIndex];
   const answer = readLineSync.question(`Question: ${leftNumber} ${currentOperation} ${rightNumber} `);
   
-  function getCorrectAnswer() {
-    if (currentOperation === NUMBERS_OPERATION_ADDITION) {
-      return leftNumber + rightNumber;
-    }
-    if (currentOperation === NUMBERS_OPERATION_SUBTRACTION) {
-      return leftNumber - rightNumber;
-    }
-    if (currentOperation === NUMBERS_OPERATION_MULTIPLICATION) {
-      return leftNumber * rightNumber;
-    }
-    if (currentOperation === NUMBERS_OPERATION_DIVISION) {
-      return leftNumber / rightNumber;
-    }
-    return 0;
-  }
-  
-  const correctAnswer = getCorrectAnswer();
+  const correctAnswer = getCalcResult({
+    operation: currentOperation,
+    leftNumber,
+    rightNumber,
+  });
   
   return {
     success: +answer === correctAnswer,
