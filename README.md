@@ -6,11 +6,11 @@ Hexlet frontend project level 1
 
 Installation
 ------------------
-`$ npm install frontend-project-lvl1`
+`$ npm global install frontend-project-lvl1`
 
 or
 
-`$ yarn add frontend-project-lvl1`
+`$ yarn global add frontend-project-lvl1`
 
 brain-even usage example
 ------------------
@@ -20,7 +20,7 @@ To start the game:
 `$ brain-even`
 
 Example:
-[![asciicast](https://asciinema.org/a/283108.svg)](https://asciinema.org/a/283108)
+[![asciicast](https://asciinema.org/a/283309.svg)](https://asciinema.org/a/283309)
 
 brain-calc usage example
 ------------------
@@ -30,7 +30,7 @@ To start the game:
 `$ brain-calc`
 
 Example:
-[![asciicast](https://asciinema.org/a/283021.svg)](https://asciinema.org/a/283021)
+[![asciicast](https://asciinema.org/a/283310.svg)](https://asciinema.org/a/283310)
 
 brain-gcd usage example
 ------------------
@@ -40,7 +40,7 @@ To start the game:
 `$ brain-gcd`
 
 Example:
-[![asciicast](https://asciinema.org/a/283025.svg)](https://asciinema.org/a/283025)
+[![asciicast](https://asciinema.org/a/283311.svg)](https://asciinema.org/a/283311)
 
 brain-progression usage example
 ------------------
@@ -50,7 +50,7 @@ To start the game:
 `$ brain-progression`
 
 Example:
-[![asciicast](https://asciinema.org/a/283107.svg)](https://asciinema.org/a/283107)
+[![asciicast](https://asciinema.org/a/283312.svg)](https://asciinema.org/a/283312)
 
 brain-prime usage example
 ------------------
@@ -60,4 +60,4 @@ To start the game:
 `$ brain-prime`
 
 Example:
-[![asciicast](https://asciinema.org/a/283260.svg)](https://asciinema.org/a/283260)
+[![asciicast](https://asciinema.org/a/283313.svg)](https://asciinema.org/a/283313)
