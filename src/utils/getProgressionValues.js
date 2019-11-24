@@ -2,8 +2,11 @@ import getRandomNumber from './getRandomNumber';
 import { PROGRESSION_STEPS_COUNT } from './config';
 
 function getProgressionValues() {
-  const firstNumber = getRandomNumber(1, 11);
-  const stepSize = getRandomNumber(1, 6);
+  const randomNumberMinValue = 1;
+  const firstNumberMaxValue = 11;
+  const stepMaxNumber = 6;
+  const firstNumber = getRandomNumber(randomNumberMinValue, firstNumberMaxValue);
+  const stepSize = getRandomNumber(randomNumberMinValue, stepMaxNumber);
   const unknownNumberIndex = getRandomNumber(0, PROGRESSION_STEPS_COUNT);
   const allNumbers = [];
   let correctAnswer;
