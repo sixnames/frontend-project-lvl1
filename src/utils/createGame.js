@@ -9,7 +9,7 @@ export default (greeting, round) => {
   const name = userName();
   console.log(`Hello, ${name}!\n`);
   
-  const askQuestion = (question) => readLineSync.question(question);
+  const askQuestion = (question) => readLineSync.question(`Question: ${question} `);
   
   for (let i = 1; i <= STEPS_COUNT; i += 1) {
     const { success, answer, correctAnswer } = round({

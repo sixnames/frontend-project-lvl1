@@ -4,7 +4,7 @@ import getRandomNumber from '../utils/getRandomNumber';
 const round = ({ askQuestion }) => {
   const leftNumber = getRandomNumber();
   const rightNumber = getRandomNumber();
-  const answer = askQuestion(`Question: ${leftNumber} ${rightNumber} `);
+  const answer = askQuestion(`${leftNumber} ${rightNumber}`);
   
   function getCorrectAnswer(a, b) {
     if (b === 0) {

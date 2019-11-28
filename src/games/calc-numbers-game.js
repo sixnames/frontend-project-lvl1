@@ -19,7 +19,7 @@ const round = ({ askQuestion }) => {
   const rightNumber = getRandomNumber();
   const operationIndex = getRandomNumber(0, 4);
   const currentOperation = operations[operationIndex];
-  const answer = askQuestion(`Question: ${leftNumber} ${currentOperation} ${rightNumber} `);
+  const answer = askQuestion(`${leftNumber} ${currentOperation} ${rightNumber}`);
   
   const correctAnswer = getCalcResult({
     operation: currentOperation,

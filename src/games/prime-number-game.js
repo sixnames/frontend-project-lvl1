@@ -4,7 +4,7 @@ import isPrime from '../utils/isPrime';
 
 const round = ({ askQuestion }) => {
   const number = getRandomNumber();
-  const answer = askQuestion(`Question: ${number} `);
+  const answer = askQuestion(number);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   
   return {

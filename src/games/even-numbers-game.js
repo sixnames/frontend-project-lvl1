@@ -1,11 +1,12 @@
 import createGame from '../utils/createGame';
+import isEven from '../utils/isEven';
 import getRandomNumber from '../utils/getRandomNumber';
 
 const round = ({ askQuestion }) => {
   const number = getRandomNumber();
-  const answer = askQuestion(`Question: ${number} `);
-  const isEven = number % 2 === 0;
-  const correctAnswer = isEven ? 'yes' : 'no';
+  const answer = askQuestion(number);
+  const isEvenNumber = isEven(number);
+  const correctAnswer = isEvenNumber ? 'yes' : 'no';
   return {
     success: correctAnswer === answer,
     answer,

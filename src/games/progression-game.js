@@ -15,7 +15,7 @@ const round = ({ askQuestion }) => {
     return `${acc} ${number}`;
   }, '');
   
-  const answer = askQuestion(`Question:${allNumbersString} `);
+  const answer = askQuestion(allNumbersString);
   
   return {
     success: +answer === correctAnswer,
