@@ -1,6 +1,8 @@
 import createGame from '../utils/createGame';
 import getProgressionValues from '../utils/getProgressionValues';
 
+const gameRules = 'What number is missing in the progression?';
+
 const round = ({ askQuestion }) => {
   const {
     correctAnswer,
@@ -24,4 +26,4 @@ const round = ({ askQuestion }) => {
   };
 };
 
-export default () => createGame('What number is missing in the progression?', round);
+export default () => createGame(gameRules, round);

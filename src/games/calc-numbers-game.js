@@ -8,6 +8,8 @@ import {
 } from '../utils/config';
 import getCalcResult from '../utils/getCalcResult';
 
+const gameRules = 'What is the result of the expression?';
+
 const round = ({ askQuestion }) => {
   const operations = [
     MATH_OPERATION_ADDITION,
@@ -34,4 +36,4 @@ const round = ({ askQuestion }) => {
   };
 };
 
-export default () => createGame('What is the result of the expression?', round);
+export default () => createGame(gameRules, round);

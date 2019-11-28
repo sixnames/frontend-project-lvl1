@@ -2,6 +2,8 @@ import createGame from '../utils/createGame';
 import getRandomNumber from '../utils/getRandomNumber';
 import isPrime from '../utils/isPrime';
 
+const gameRules = 'Answer "yes" if the number is prime, otherwise answer "no".';
+
 const round = ({ askQuestion }) => {
   const number = getRandomNumber();
   const answer = askQuestion(number);
@@ -14,4 +16,4 @@ const round = ({ askQuestion }) => {
   };
 };
 
-export default () => createGame('Answer "yes" if the number is prime, otherwise answer "no".', round);
+export default () => createGame(gameRules, round);

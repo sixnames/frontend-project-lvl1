@@ -2,9 +2,9 @@ import readLineSync from 'readline-sync';
 import userName from '../index';
 import { STEPS_COUNT } from './config';
 
-export default (greeting, round) => {
+export default (gameRules, round) => {
   let isSuccess = false;
-  console.log(`Welcome to the Brain Games!\n${greeting}`);
+  console.log(`Welcome to the Brain Games!\n${gameRules}`);
   
   const name = userName();
   console.log(`Hello, ${name}!\n`);
