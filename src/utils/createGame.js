@@ -3,7 +3,6 @@ import userName from '../index';
 import { STEPS_COUNT } from './config';
 
 export default (gameRules, round) => {
-  let isSuccess = false;
   console.log(`Welcome to the Brain Games!\n${gameRules}`);
   
   const name = userName();
@@ -19,16 +18,11 @@ export default (gameRules, round) => {
     if (!success) {
       console.log(`Your answer: ${answer}`);
       console.log(`${answer} is wrong answer ;(.\nCorrect answer was ${correctAnswer}. Let's try again, ${name}!`);
-      break;
+      return;
     }
     
     console.log(`Your answer: ${answer}\nCorrect!`);
-    if (i === STEPS_COUNT) {
-      isSuccess = success;
-    }
   }
   
-  if (isSuccess) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  console.log(`Congratulations, ${name}!`);
 };
