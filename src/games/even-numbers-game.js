@@ -1,10 +1,9 @@
-import readLineSync from 'readline-sync';
 import createGame from '../utils/createGame';
 import getRandomNumber from '../utils/getRandomNumber';
 
-const round = () => {
+const round = ({ askQuestion }) => {
   const number = getRandomNumber();
-  const answer = readLineSync.question(`Question: ${number} `);
+  const answer = askQuestion(`Question: ${number} `);
   const isEven = number % 2 === 0;
   const correctAnswer = isEven ? 'yes' : 'no';
   return {

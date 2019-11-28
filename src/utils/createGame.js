@@ -1,3 +1,4 @@
+import readLineSync from 'readline-sync';
 import userName from '../index';
 import { STEPS_COUNT } from './config';
 
@@ -8,8 +9,12 @@ export default (greeting, round) => {
   const name = userName();
   console.log(`Hello, ${name}!\n`);
   
+  const askQuestion = (question) => readLineSync.question(question);
+  
   for (let i = 1; i <= STEPS_COUNT; i += 1) {
-    const { success, answer, correctAnswer } = round();
+    const { success, answer, correctAnswer } = round({
+      askQuestion,
+    });
     
     if (!success) {
       console.log(`Your answer: ${answer}`);

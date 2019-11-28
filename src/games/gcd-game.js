@@ -1,11 +1,10 @@
-import readLineSync from 'readline-sync';
 import createGame from '../utils/createGame';
 import getRandomNumber from '../utils/getRandomNumber';
 
-const round = () => {
+const round = ({ askQuestion }) => {
   const leftNumber = getRandomNumber();
   const rightNumber = getRandomNumber();
-  const answer = readLineSync.question(`Question: ${leftNumber} ${rightNumber} `);
+  const answer = askQuestion(`Question: ${leftNumber} ${rightNumber} `);
   
   function getCorrectAnswer(a, b) {
     if (b === 0) {

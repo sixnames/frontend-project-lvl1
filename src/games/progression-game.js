@@ -1,8 +1,7 @@
-import readLineSync from 'readline-sync';
 import createGame from '../utils/createGame';
 import getProgressionValues from '../utils/getProgressionValues';
 
-const round = () => {
+const round = ({ askQuestion }) => {
   const {
     correctAnswer,
     unknownNumberIndex,
@@ -16,7 +15,7 @@ const round = () => {
     return `${acc} ${number}`;
   }, '');
   
-  const answer = readLineSync.question(`Question:${allNumbersString} `);
+  const answer = askQuestion(`Question:${allNumbersString} `);
   
   return {
     success: +answer === correctAnswer,
