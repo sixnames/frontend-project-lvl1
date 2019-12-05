@@ -1,8 +1,8 @@
-import createGame from '../utils/createGame';
-import isEven from '../utils/isEven';
+import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isEven = (number) => number % 2 === 0;
 
 const round = ({ askQuestion }) => {
   const number = getRandomNumber();

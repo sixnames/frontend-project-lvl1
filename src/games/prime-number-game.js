@@ -1,4 +1,4 @@
-import createGame from '../utils/createGame';
+import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 
 const gameRules = 'Answer "yes" if the number is prime, otherwise answer "no".';

@@ -1,4 +1,4 @@
-import createGame from '../utils/createGame';
+import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 import {
   MATH_OPERATION_ADDITION,
@@ -6,9 +6,21 @@ import {
   MATH_OPERATION_MULTIPLICATION,
   MATH_OPERATION_SUBTRACTION,
 } from '../utils/config';
-import getCalcResult from '../utils/getCalcResult';
 
 const gameRules = 'What is the result of the expression?';
+
+function getCalcResult({ operation = '', leftNumber = 1, rightNumber = 1 }) {
+  if (operation === MATH_OPERATION_SUBTRACTION) {
+    return leftNumber - rightNumber;
+  }
+  if (operation === MATH_OPERATION_MULTIPLICATION) {
+    return leftNumber * rightNumber;
+  }
+  if (operation === MATH_OPERATION_DIVISION) {
+    return leftNumber / rightNumber;
+  }
+  return leftNumber + rightNumber;
+}
 
 const round = ({ askQuestion }) => {
   const operations = [
