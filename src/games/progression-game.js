@@ -47,14 +47,14 @@ const round = ({ askQuestion }) => {
     allNumbers,
   } = getProgressionValues();
   
-  const allNumbersString = allNumbers.reduce((acc, number, i) => {
+  const roundQuestion = allNumbers.reduce((acc, number, i) => {
     if (i === unknownNumberIndex) {
       return `${acc} ..`;
     }
     return `${acc} ${number}`;
   }, '');
   
-  const answer = askQuestion(allNumbersString);
+  const answer = askQuestion(roundQuestion);
   
   return {
     success: +answer === correctAnswer,
