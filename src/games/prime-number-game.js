@@ -1,7 +1,7 @@
 import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 
-const gameRules = 'Answer "yes" if the number is prime, otherwise answer "no".';
+const gameRule = 'Answer "yes" if the number is prime, otherwise answer "no".';
 
 const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
@@ -22,4 +22,4 @@ const round = ({ askQuestion }) => {
   };
 };
 
-export default () => createGame(gameRules, round);
+export default () => createGame(gameRule, round);

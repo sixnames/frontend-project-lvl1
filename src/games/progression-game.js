@@ -2,7 +2,7 @@ import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 import { PROGRESSION_STEPS_COUNT } from '../utils/config';
 
-const gameRules = 'What number is missing in the progression?';
+const gameRule = 'What number is missing in the progression?';
 
 function getProgressionValues() {
   const randomNumberMinValue = 1;
@@ -63,4 +63,4 @@ const round = ({ askQuestion }) => {
   };
 };
 
-export default () => createGame(gameRules, round);
+export default () => createGame(gameRule, round);

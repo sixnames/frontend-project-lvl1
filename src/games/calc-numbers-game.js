@@ -7,7 +7,7 @@ import {
   MATH_OPERATION_SUBTRACTION,
 } from '../utils/config';
 
-const gameRules = 'What is the result of the expression?';
+const gameRule = 'What is the result of the expression?';
 
 function getCalcResult({ operation = '', leftNumber = 1, rightNumber = 1 }) {
   if (operation === MATH_OPERATION_SUBTRACTION) {
@@ -48,4 +48,4 @@ const round = ({ askQuestion }) => {
   };
 };
 
-export default () => createGame(gameRules, round);
+export default () => createGame(gameRule, round);

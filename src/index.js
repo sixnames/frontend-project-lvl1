@@ -1,8 +1,8 @@
 import readLineSync from 'readline-sync';
 import { STEPS_COUNT } from './utils/config';
 
-export default (gameRules, round) => {
-  console.log(`Welcome to the Brain Games!\n${gameRules}`);
+export default (gameRule, round) => {
+  console.log(`Welcome to the Brain Games!\n${gameRule}`);
   
   const name = readLineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
