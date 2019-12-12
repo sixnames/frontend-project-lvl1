@@ -1,3 +1,4 @@
+import readLineSync from 'readline-sync';
 import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 import { PROGRESSION_STEPS_COUNT } from '../utils/config';
@@ -40,7 +41,7 @@ function getProgressionValues() {
   };
 }
 
-const round = ({ askQuestion }) => {
+const round = () => {
   const {
     correctAnswer,
     unknownNumberIndex,
@@ -54,7 +55,7 @@ const round = ({ askQuestion }) => {
     return `${acc} ${number}`;
   }, '');
   
-  const answer = askQuestion(roundQuestion);
+  const answer = readLineSync.question(`Question: ${roundQuestion} `);
   
   return {
     success: +answer === correctAnswer,

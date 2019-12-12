@@ -1,12 +1,13 @@
+import readLineSync from 'readline-sync';
 import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
-const round = ({ askQuestion }) => {
+const round = () => {
   const leftNumber = getRandomNumber();
   const rightNumber = getRandomNumber();
-  const answer = askQuestion(`${leftNumber} ${rightNumber}`);
+  const answer = readLineSync.question(`Question: ${leftNumber} ${rightNumber} `);
   
   function getCorrectAnswer(a, b) {
     if (b === 0) {

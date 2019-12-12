@@ -1,3 +1,4 @@
+import readLineSync from 'readline-sync';
 import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 
@@ -10,9 +11,9 @@ const isPrime = (num) => {
   return true;
 };
 
-const round = ({ askQuestion }) => {
+const round = () => {
   const number = getRandomNumber();
-  const answer = askQuestion(number);
+  const answer = readLineSync.question(`Question: ${number} `);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   
   return {

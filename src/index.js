@@ -7,12 +7,8 @@ export default (gameRule, round) => {
   const name = readLineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
   
-  const askQuestion = (question) => readLineSync.question(`Question: ${question} `);
-  
   for (let i = 1; i <= STEPS_COUNT; i += 1) {
-    const { success, answer, correctAnswer } = round({
-      askQuestion,
-    });
+    const { success, answer, correctAnswer } = round();
     
     if (!success) {
       console.log(`Your answer: ${answer}`);

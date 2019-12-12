@@ -1,3 +1,4 @@
+import readLineSync from 'readline-sync';
 import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
 import {
@@ -22,7 +23,7 @@ function getCalcResult({ operation = '', leftNumber = 1, rightNumber = 1 }) {
   return leftNumber + rightNumber;
 }
 
-const round = ({ askQuestion }) => {
+const round = () => {
   const operations = [
     MATH_OPERATION_ADDITION,
     MATH_OPERATION_SUBTRACTION,
@@ -33,7 +34,7 @@ const round = ({ askQuestion }) => {
   const rightNumber = getRandomNumber();
   const operationIndex = getRandomNumber(0, operations.length);
   const currentOperation = operations[operationIndex];
-  const answer = askQuestion(`${leftNumber} ${currentOperation} ${rightNumber}`);
+  const answer = readLineSync.question(`Question: ${leftNumber} ${currentOperation} ${rightNumber} `);
   
   const correctAnswer = getCalcResult({
     operation: currentOperation,
