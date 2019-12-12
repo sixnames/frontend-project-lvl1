@@ -9,16 +9,19 @@ const MATH_OPERATION_DIVISION = '/';
 const gameRule = 'What is the result of the expression?';
 
 function getCalcResult({ operation = '', leftNumber = 1, rightNumber = 1 }) {
-  if (operation === MATH_OPERATION_SUBTRACTION) {
-    return leftNumber - rightNumber;
+  switch (operation) {
+    case MATH_OPERATION_SUBTRACTION:
+      return leftNumber - rightNumber;
+    
+    case MATH_OPERATION_MULTIPLICATION:
+      return leftNumber * rightNumber;
+    
+    case MATH_OPERATION_DIVISION:
+      return leftNumber / rightNumber;
+    
+    default:
+      return leftNumber + rightNumber;
   }
-  if (operation === MATH_OPERATION_MULTIPLICATION) {
-    return leftNumber * rightNumber;
-  }
-  if (operation === MATH_OPERATION_DIVISION) {
-    return leftNumber / rightNumber;
-  }
-  return leftNumber + rightNumber;
 }
 
 const round = () => {
