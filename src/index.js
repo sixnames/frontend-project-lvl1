@@ -1,5 +1,6 @@
 import readLineSync from 'readline-sync';
-import { STEPS_COUNT } from './utils/config';
+
+const ROUNDS_COUNT = 3;
 
 export default (gameRule, round) => {
   console.log(`Welcome to the Brain Games!\n${gameRule}`);
@@ -7,7 +8,7 @@ export default (gameRule, round) => {
   const name = readLineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
   
-  for (let i = 1; i <= STEPS_COUNT; i += 1) {
+  for (let i = 1; i <= ROUNDS_COUNT; i += 1) {
     const { success, answer, correctAnswer } = round();
     
     if (!success) {

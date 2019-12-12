@@ -1,13 +1,11 @@
 import readLineSync from 'readline-sync';
 import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
-import {
-  MATH_OPERATION_ADDITION,
-  MATH_OPERATION_DIVISION,
-  MATH_OPERATION_MULTIPLICATION,
-  MATH_OPERATION_SUBTRACTION,
-} from '../utils/config';
 
+const MATH_OPERATION_ADDITION = '+';
+const MATH_OPERATION_SUBTRACTION = '-';
+const MATH_OPERATION_MULTIPLICATION = '*';
+const MATH_OPERATION_DIVISION = '/';
 const gameRule = 'What is the result of the expression?';
 
 function getCalcResult({ operation = '', leftNumber = 1, rightNumber = 1 }) {

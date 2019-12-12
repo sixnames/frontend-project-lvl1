@@ -1,8 +1,8 @@
 import readLineSync from 'readline-sync';
 import createGame from '../index';
 import getRandomNumber from '../utils/getRandomNumber';
-import { PROGRESSION_STEPS_COUNT } from '../utils/config';
 
+const PROGRESSION_STEPS_COUNT = 10;
 const gameRule = 'What number is missing in the progression?';
 
 function getProgressionValues() {
